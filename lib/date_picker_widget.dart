@@ -140,9 +140,10 @@ class _DatePickerState extends State<DatePicker> {
   @override
   Widget build(BuildContext context) {
     return Directionality(
-      textDirection: (widget.directionality) ?? ((widget.calendarType == CalendarType.persianDate)
-          ? TextDirection.rtl
-          : TextDirection.ltr),
+      textDirection:TextDirection.rtl, 
+      //(widget.directionality) ?? ((widget.calendarType == CalendarType.persianDate)
+          // ? 
+          // : TextDirection.ltr),
       child: Container(
         height: widget.height,
         child: ListView.builder(
